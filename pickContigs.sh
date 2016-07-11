@@ -95,7 +95,7 @@ done
 
 # Main logic
 
-for f in $(cat $contigs); do fgrep -A 1 -w $f $input >> $output; done
+for f in $(cat $contigs); do fgrep -A 1 $f $input >> $output; done
 
 graceful_exit
 
