@@ -65,3 +65,14 @@ sudo apt-get install build-essential python2.7-dev python-numpy python-matplotli
 ```sh
 python /path/to/subsetfastq.py fraction(0-1) forward.fastq reverse.fastq forward.sub.fastq reverse.sub.fastq
 ```
+
+##fastadiff.py
+###Description
+- takes two text files as input (only tested on fasta format) checks whether sequence names in one file are present in the other
+- assumes that there is only one line per sequence
+- *O(n<sup>2</sup>)* complexity :/
+
+###Usage
+```sh
+./fastadiff file1.fasta file2.fasta
+```
