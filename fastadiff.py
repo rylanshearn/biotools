@@ -8,7 +8,7 @@ def fastadiff(file1, file2):
     Assumes that there is only one line per sequence in 
     the input files
     usage:
-    ./fastadiff file1.fasta file2.fasta
+    ./fastadiff file1.fasta file2.fasta output.txt
     '''
     #make count 0
     count = 0
@@ -39,5 +39,8 @@ def fastadiff(file1, file2):
 
 #load sys module (for passing arguments from cmd line)
 import sys
+
+#output file
+out = open(sys.argv[3], 'w')
 #run function with first two arguments	
 fastadiff(sys.argv[1], sys.argv[2])

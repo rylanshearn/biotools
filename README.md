@@ -74,5 +74,5 @@ python /path/to/subsetfastq.py fraction(0-1) forward.fastq reverse.fastq forward
 
 ###Usage
 ```sh
-./fastadiff file1.fasta file2.fasta
+./fastadiff file1.fasta file2.fasta output.txt
 ```
